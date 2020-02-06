@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<title>M3</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="estiloM3.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+	
+	<header>
+		<div class="faixaHeader">
+			<h1 class="logo"><img src="img/logoM3.png" alt="M3"></h1>
+
+			<img src="img/sacola.png" class="sacola">
+			<div class="quantidadeSacola hide mobileHide">
+
+			</div>
+			<div class="painelSacola hide mobileHide">
+				<div class="produtoSacola">
+					<table>
+						<thead>
+							<tr>
+								<th>Produto</th>
+								<th>Valor</th>
+								<th> <input type="number" name="quantity" min="1" max="5" value="1"></th>
+							</tr>
+						</thead>
+						<tbody id="corpoTabelaSacola"></tbody>
+						
+					</table>
+				</div>
+			</div>
+			
+		</div>
+
+		
+	</header>
+	
+	
+
+	<section id="main">
+		
+		<div class="faixa">
+			<div class="tituloProduto">
+				<h1 class="titulo">Blusas</h1>
+			</div>
+			<div class="caixa caixaFlutuante mobileShow mobileHide">
+				<div class="" id="caixaOrdenar">
+					<div class="tituloCaixa">
+						<h5>Ordernar por:
+							<span class="fas fa-chevron-down" id="iconDown"></span>
+							<span class="fas fa-chevron-up hide" id="iconUp"></span>
+						</h5>
+					</div>
+					<div class=" hide" id="subMenuOrdenar">
+						<h5 class="subMenu">Mais recente</h5>
+						<h5 class="subMenu">Menor preço</h5>
+						<h5 class="subMenu">Maior preço</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="caixa caixaFiltro hide" id="botaoFiltrar">
+			<h1>Filtrar</h1>
+		</div>
+		<div class="caixa esconder" id="botaoOrdenar">
+			<h1>Ordenar</h1>
+		</div>
+
+		<section class="telaFlutuante mobileHide" id="telaFlutuante">
+
+			<div class="caixaTitulo mobileHide hide" id="caixaTituloFiltrar">
+				<h1>FILTRAR</h1>
+				<i class="icones" id="iconeFecharFiltrar">
+					<img src="img/close-button.svg" class="iconesTamanho">
+				</i>
+			</div>
+			<div class="secaoFiltrosFlutuante mobileHide" id="secaoFiltrosFlutuante">
+				<ul>
+					<li class="seletorQuadrado">
+						<H2 id="tituloCores" >CORES
+							<i class="icones">
+								<img src="img/substract.svg" class="iconesTamanho IconeMaisMenos mobileHide">
+								<img src="img/plus-button.svg" class="iconesTamanho IconeMaisMenos">
+							</i>
+						</H2>
+
+						<input type="checkbox" id="cores">
+						<label for="cores">
+							<ul class=" opcoes mobileHide" id="caixaCores">
+								<li class="filtroCores">
+									<input type="checkbox" id="Amarelo" value="Amarelo">
+									<label for="Amarelo" class="fonteLabel labelQuadrado">Amarelo</label>
+								</li>
+								<li class="filtroCores">
+									<input type="checkbox" id="Azul" value="Azul">
+									<label for="Azul" class="fonteLabel labelQuadrado">Azul</label>
+								</li>
+								<li class="filtroCores">
+									<input type="checkbox" id="Branco" value="Branco">
+									<label for="Branco" class="fonteLabel labelQuadrado">Branco</label>
+								</li>
+								<li class="filtroCores">
+									<input type="checkbox" id="Cinza" value="Cinza">
+									<label for="Cinza" class="fonteLabel labelQuadrado">Cinza</label>
+								</li>
+								<li class="filtroCores">
+									<input type="checkbox" id="Laranja" value="Laranja">
+									<label for="Laranja" class="fonteLabel labelQuadrado">Laranja</label>
+								</li>
+								<h3 class="maisOpcoes mobileHide" id="opcaoMaisCor">Ver todas as cores
+									<span class="fas fa-chevron-down"></span>
+								</h3>
+								<ul class="hide mobileShow" id="maisCores">
+									<li class="filtroCores">
+										<input type="checkbox" id="Verde" value="Verde">
+										<label for="Verde" class="fonteLabel labelQuadrado">Verde</label>
+									</li>
+									<li class="filtroCores">
+										<input type="checkbox" id="Vermelho" value="Vermelho">
+										<label for="Vermelho" class="fonteLabel labelQuadrado">Vermelho</label>
+									</li>
+									<li class="filtroCores">
+										<input type="checkbox" id="Preto" value="Preto">
+										<label for="Preto" class="fonteLabel labelQuadrado">Preto</label>
+									</li>
+									<li class="filtroCores">
+										<input type="checkbox" id="Rosa" value="Rosa">
+										<label for="Rosa" class="fonteLabel labelQuadrado">Rosa</label>
+									</li>
+									<li class="filtroCores">
+										<input type="checkbox" id="Vinho" value="Vinho">
+										<label for="Vinho" class="fonteLabel labelQuadrado">Vinho</label>
+									</li>
+									<h3 class="maisOpcoes mobileHide" id="opcaoMenosCor">Ver menos cores
+										<span class="fas fa-chevron-up"></span>
+									</h3>
+								</ul>
+								
+							</ul>
+						</label>
+					</li>
+					<li class="tamanhos">
+						<H2 id="tituloTamanhos" >TAMANHOS
+							<i class="icones">
+								<img src="img/substract.svg" class="iconesTamanho IconeMaisMenos mobileHide">
+								<img src="img/plus-button.svg" class="iconesTamanho IconeMaisMenos">
+							</i>
+						</H2>
+						<ul class="opcoes mobileHide" id="caixaTamanhos">
+							<li class="filtroTamanho">
+								<input type="checkbox" id="P" value="P">
+								<label for="P" class="labelTamanho">
+									<div>P</div>
+								</label>
+							</li>
+							<li class="filtroTamanho">
+								<input type="checkbox" id="M" value="M">
+								<label for="M" class="labelTamanho">
+									<div>M</div>
+								</label>
+							</li>
+							<li class="filtroTamanho">
+								<input type="checkbox" id="G" value="G">
+								<label for="G" class="labelTamanho">
+									<div>G</div>
+								</label>
+							</li>
+							<li class="filtroTamanho">
+								<input type="checkbox" id="GG" value="GG">
+								<label for="GG" class="labelTamanho">
+									<div>GG</div>
+								</label>
+							</li>
+							<li class="filtroTamanho">
+								<input type="checkbox" id="U" value="U">
+								<label for="U" class="labelTamanho">
+									<div>U</div>
+								</label>
+							</li>
+							<li class="filtroTamanho">
+								<input type="checkbox" id="36" value="36">
+								<label for="36" class="labelTamanho">
+									<div>36</div>
+								</label>
+							</li>
+							<li class="filtroTamanho">
+								<input type="checkbox" id="38" value="38">
+								<label for="38" class="labelTamanho">
+									<div>38</div>
+								</label>
+							</li>
+							<li class="filtroTamanho">
+								<input type="checkbox" id="40" value="40">
+								<label for="40" class="labelTamanho">
+									<div>40</div>
+								</label>
+							</li>
+							<li class="filtroTamanho">
+								<input type="checkbox" id="42" value="42">
+								<label for="42" class="labelTamanho">
+									<div>42</div>
+								</label>
+							</li>
+							<li class="filtroTamanho">
+								<input type="checkbox" id="44" value="44">
+								<label for="44" class="labelTamanho">
+									<div>44</div>
+								</label>
+							</li>
+							<li class="filtroTamanho">
+								<input type="checkbox" id="46" value="46">
+								<label for="46" class="labelTamanho">
+									<div>46</div>
+								</label>
+							</li>
+						</ul>
+					</li>
+					<li class="seletorQuadrado">
+						<H2 id="tituloPreco">FAIXA DE PREÇO
+							<i class="icones">
+								<img src="img/substract.svg" class="iconesTamanho IconeMaisMenos mobileHide">
+								<img src="img/plus-button.svg" class="iconesTamanho IconeMaisMenos">
+							</i>
+						</H2>
+						<ul class="opcoes mobileHide" id="caixaValores">
+							<li class="opcaoValor">
+								<input type="checkbox" id="50" value="50">
+								<label class="fonteLabel labelQuadrado" for="50">de R$ 0 até R$ 50</label>
+							</li>
+							<li class="opcaoValor">
+								<input type="checkbox" id="150" value="50">
+								<label class="fonteLabel labelQuadrado" for="150">de R$ 51 até R$ 150</label>
+							</li>
+							<li class="opcaoValor">
+								<input type="checkbox" id="300" value="50">
+								<label class=" fonteLabel labelQuadrado" for="300">de R$ 150 até R$ 300</label>
+							</li>
+							<li class="opcaoValor">
+								<input type="checkbox" id="500" value="50">
+								<label class=" fonteLabel labelQuadrado" for="500">de R$ 301 até R$ 501</label>
+							</li>
+							<li class="opcaoValor">
+								<input type="checkbox" id="501" value="50">
+								<label class="fonteLabel labelQuadrado" for="501">a partir de R$ 501</label>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="caixaTitulo hide mobileHide" id="caixaTituloOrdenar">
+				<h1>ORDENAR</h1>
+				<i class="icones">
+					<img src="img/close-button.svg" class="iconesTamanho" id="iconeFecharOrdenar">
+				</i>
+			</div>
+
+			<div id="mobileOrdenar" class="menuOrdenar mobileHide hide">
+				<ul>
+					<li class="odernarOpcoes">
+						<input type="checkbox" id="maisRecente">
+						<label class="fonteLabel" for="maisRecente">Mais recente</label>
+					</li>
+					<li class="odernarOpcoes">
+						<input type="checkbox" id="menorPreco">
+						<label class="fonteLabel" for="menorPreco">Menor preço</label>
+					</li>
+					<li class="odernarOpcoes">
+						<input type="checkbox" id="maiorPreco">
+						<label class="fonteLabel" for="maiorPreco">Maior preço</label>
+					</li>
+				</ul>
+			</div>			
+
+			<div class="botoes hide" id="botoesMobile">
+				<div class="botaoTelaFlutuante botaoColorido botaoEspacamento" id="botaoAplicar">
+					<h3>APLICAR</h3>
+				</div>
+				<div class="botaoTelaFlutuante botaoBranco" id="botaoLimpar">
+					<h3>LIMPAR</h3>
+				</div>
+			</div>
+		</section>
+
+		<section id="vitrine" class="vitrine">
+			<div>
+				<ol id="boxProduto">
+				</ol>
+				<div class="botaoCarregar" id="botaoCarregar">
+					<h4>CARREGAR MAIS</h4>
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<footer>
+		<h5>Agência M3 - Agência de Performance Digital</h5>
+	</footer>
+
+	<script src='m3.js'></script>
+	<script src='m3.log.js'></script>
+	<script src='m3.mobile.js'></script>
+
+</body>
+</html>

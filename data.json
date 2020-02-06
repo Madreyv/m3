@@ -1,0 +1,82 @@
+{"listaProdutos":[
+   {
+     "produto": "CAMISETA MESCLA",
+     "valor": "28,00",
+     "parcela": "3x de R$9,33",
+     "imagem": "img_2.png",
+     "cor":"CINZA",
+     "tamanho":"M",
+     "date":"01/10/2018",
+     "codigo":"CAM01"
+     },
+    {
+     "produto": "CARDIGAN TIGRE",
+     "valor": "398,00",
+     "parcela": "5x de R$30,00",
+     "imagem": "img_4.png",
+     "cor": "LARANJA",
+     "tamanho":"U",
+     "date":"02/10/2017",
+     "codigo":"CAR01"  
+    },
+    {
+     "produto": "CARDIGAN OFF WHITE",
+     "valor": "99,00",
+     "parcela": "3x de R$33,90",
+     "imagem": "img_5.png",
+     "cor":"BRANCO", 
+     "tamanho":"M",
+     "date":"03/18/2018",
+     "codigo":"CAR02" 
+    },
+    {
+     "produto": "BODY LEOPARDO",
+     "valor": "129,90",
+     "parcela": "3x de R$43,43",
+     "imagem": "img_6.png",
+     "cor": "VERMELHO",
+     "tamanho":"40",
+     "date":"01/02/2018",
+     "codigo":"BO01"  
+    },
+    {
+     "produto": "CASACO PELOS",
+     "valor": "398,00",
+     "parcela": "5x de R$30,00",
+     "imagem": "img_7.png",
+     "cor": "ROSA",
+     "tamanho":"P",
+     "date":"03/02/2018",
+     "codigo":"CA01"  
+    },
+    {
+     "produto": "CROPPED STRIPES",
+     "valor": "120,00",
+     "parcela": "3x de R$40,00",
+     "imagem": "img_8.png",
+     "cor": "LARANJA",
+     "tamanho":"G",
+     "date":"01/09/2017",
+     "codigo":"CRP01"
+    },
+    {
+     "produto": "CAMISA TRANSPARENTE",
+     "valor": "398,00",
+     "parcela": "5x de R$79,60",
+     "imagem": "img_9.png",
+     "cor": "PRETO",
+     "tamanho":"M",
+     "date":"09/11/2017",
+     "codigo":"CAM02"  
+    },
+    {
+     "produto": "POCHETE CLUTCH",
+     "valor": "99,00",
+     "parcela": "3x de R$33,00",
+     "imagem": "img_10.png",
+     "cor": "PRETO",
+     "tamanho":"U",
+     "date":"05/15/2018",
+     "codigo":"PO01" 
+    }
+    ]}
