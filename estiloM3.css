@@ -1,0 +1,537 @@
+body {
+  font-family: "Open Sans";
+  height: 100%;
+}
+
+header {
+  border-bottom: 2px solid #c7c7c7;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+header .faixaHeader {
+  width: 100%;
+  display: inline-block;
+}
+
+.logo {
+  margin: 3.908%;
+  float: left;
+}
+
+.sacola {
+  margin: 3.908% 7.813%;
+  float: right;
+}
+
+table {
+  width: 270px;
+  -webkit-box-shadow: 10px 10px 19px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 10px 10px 19px rgba(0, 0, 0, 0.45);
+  box-shadow: 10px 10px 19px rgba(0, 0, 0, 0.45);
+  background: white;
+}
+
+tbody tr td, thead tr th {
+  text-align: left;
+}
+
+td {
+  padding: 2px;
+}
+td input {
+  display: block;
+}
+
+table tbody tr:nth-child(2n+1) {
+  background: rgba(211, 211, 211, 0.9);
+}
+
+th {
+  padding: 2px;
+}
+
+.painelSacola {
+  position: absolute;
+  right: 12%;
+  top: 0;
+  z-index: 10;
+}
+
+.quantidadeSacola {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #00c0ee;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 50%;
+  color: white;
+  right: 9.5%;
+  top: 55%;
+}
+.quantidadeSacola span {
+  display: inline-block;
+  padding: 16%;
+}
+
+.titulo {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 5.314%;
+  margin-bottom: 4.688%;
+  color: #333333;
+  font-weight: 400;
+}
+
+input {
+  display: none;
+}
+
+ul li h2 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  line-height: 100px;
+}
+
+.telaFlutuante {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+}
+.telaFlutuante .caixaTitulo {
+  border-bottom: 1px solid #666666;
+  padding: 7%;
+}
+.telaFlutuante .caixaTitulo h1 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #666666;
+  font-family: sans-serif;
+  font-weight: 400;
+  display: inline-block;
+}
+.telaFlutuante .secaoFiltrosFlutuante {
+  padding-left: 7.056%;
+}
+
+.icones {
+  float: right;
+}
+
+.iconesTamanho {
+  height: 20px;
+}
+
+.IconeMaisMenos {
+  padding-right: 40px;
+}
+
+.esconder {
+  display: none;
+}
+
+.menuOrdenar {
+  padding-left: 6.25%;
+}
+
+.botaoEspacamento {
+  margin-left: 6.078%;
+  margin-right: 6.25%;
+}
+
+.botaoTelaFlutuante {
+  width: 260px;
+  height: 80px;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 6.25%;
+  margin-top: 15.625%;
+  border: 1px solid #666666;
+}
+.botaoTelaFlutuante h3 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-top: 9.62%;
+}
+
+.botaoColorido {
+  background-color: #00bff3;
+  border: none;
+  color: white;
+}
+
+.seletorQuadrado .labelQuadrado {
+  position: relative;
+  padding-left: 4%;
+  margin-left: 14.5%;
+}
+.seletorQuadrado .labelQuadrado::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #666666;
+  box-sizing: border-box;
+  position: absolute;
+  left: -32PX;
+  top: 0.5PX;
+}
+.seletorQuadrado .labelQuadrado::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: 1px solid #666666;
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  left: -27px;
+  top: 5.5PX;
+}
+.seletorQuadrado input:checked + .labelQuadrado::after {
+  background-color: #00bff3;
+  border: 1px solid #00bff3;
+  display: inline-block;
+}
+
+.fonteLabel {
+  font-size: 26px;
+  line-height: 80px;
+  font-family: sans-serif;
+}
+
+.labelMenu li ul {
+  display: none;
+}
+
+input:checked + .labelMenu li ul {
+  display: block;
+}
+
+#menuCores {
+  display: inline-block;
+}
+
+.tamanhos ul li {
+  display: inline-block;
+  margin-left: 7.591%;
+  margin-bottom: 7.591%;
+}
+
+.labelTamanho {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border: 1px solid #666666;
+  font-size: 23px;
+  line-height: 87px;
+  color: #666666;
+  text-align: center;
+  display: inline-block;
+}
+
+input:checked + .labelTamanho {
+  border: 1px solid #00bff3;
+  color: #000000;
+}
+
+.caixa {
+  border: 1px solid #666666;
+  width: 43.75%;
+  float: left;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+.caixa h1 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #666666;
+  font-weight: 400;
+  margin: 10% 0;
+  position: relative;
+}
+.caixa h5 {
+  padding: 7px;
+}
+.caixa .tituloCaixa {
+  border-bottom: 1px solid #666666;
+  height: 30px;
+}
+.caixa .subMenu:hover {
+  background-color: #00c0ee;
+  color: white;
+}
+
+.caixaFiltro {
+  margin-left: 6.25%;
+}
+
+.caixaFlutuante {
+  position: absolute;
+  z-index: 9;
+  width: 125px;
+  top: 16.64%;
+  right: 10.008%;
+  background-color: white;
+}
+
+.fa-chevron-down, .fa-chevron-up {
+  font-size: 12px;
+  margin-left: 9px;
+}
+
+.produto {
+  display: inline-block;
+  width: 41.4068%;
+  margin-left: 4%;
+  margin-top: 9.377%;
+  margin-right: 4%;
+  text-align: center;
+}
+.produto img {
+  width: 100%;
+  margin-top: 0;
+}
+.produto .TituloProduto {
+  font-size: 19px;
+  letter-spacing: 2px;
+  color: #000000;
+  margin-top: 20px;
+}
+.produto .precoProduto {
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+  margin-top: 25px;
+}
+.produto .parcelaProduto {
+  font-size: 19px;
+  line-height: 24px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.botao {
+  width: 100%;
+  height: 41%;
+}
+
+.botao:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.botaoComprar {
+  border: 1px solid;
+  background-color: black;
+  cursor: pointer;
+}
+
+.botaoComprar label h4 {
+  margin-top: 7.55%;
+  margin-bottom: 7.55%;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  z-index: 9;
+}
+
+.botaoComprar label h4 {
+  cursor: pointer;
+}
+
+.botaoCarregar {
+  width: 247px;
+  height: 65px;
+  background-color: #00c0ee;
+  text-align: center;
+  margin: 6.25% auto 14.063% auto;
+  cursor: pointer;
+}
+.botaoCarregar h4 {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 700;
+  padding-top: 8%;
+}
+
+footer {
+  width: 100%;
+  background-color: #000000;
+  text-align: center;
+}
+footer h5 {
+  font-size: 16px;
+  line-height: 33px;
+  color: #ffffff;
+}
+
+.mobileShow {
+  display: block;
+}
+
+.mobileHide {
+  display: none;
+}
+
+@media only screen and (min-width: 840px) {
+  .mobileHide {
+    display: block;
+  }
+
+  .hide {
+    display: none !important;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .esconder {
+    display: none;
+  }
+
+  .faixaHeader {
+    padding-top: 1.099%;
+    padding-bottom: 1.099%;
+    display: inline-block;
+  }
+
+  .logo {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 9.883%;
+  }
+
+  .sacola {
+    position: absolute;
+    right: 10.25%;
+    margin: 0;
+  }
+
+  .titulo {
+    padding-left: 9.883%;
+    margin-top: 2.929%;
+    margin-bottom: 1.929%;
+    font-size: 32px;
+    color: #333333;
+    font-family: sans-serif;
+    text-align: left;
+  }
+
+  .telaFlutuante {
+    position: relative;
+    width: 17.09%;
+    display: inline-block;
+    padding-left: 9.883%;
+  }
+
+  .secaoFiltrosFlutuante {
+    padding-left: 0;
+  }
+
+  ul li h2 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #000000;
+    font-family: sans-serif;
+    line-height: 50px;
+  }
+
+  .icones {
+    display: none;
+  }
+
+  .fonteLabel {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  .seletorQuadrado .labelQuadrado {
+    padding-left: 0;
+    margin-left: 14.5%;
+  }
+  .seletorQuadrado .labelQuadrado::before {
+    content: " ";
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #666666;
+    box-sizing: border-box;
+    width: 15px;
+    height: 15px;
+    left: -25px;
+  }
+  .seletorQuadrado .labelQuadrado::after {
+    content: "";
+    left: -22px;
+    top: 3.5PX;
+    width: 9px;
+    height: 9px;
+  }
+
+  .opcoes {
+    max-width: 179px;
+  }
+
+  .maisOpcoes {
+    font-size: 12px;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+  .labelTamanho {
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    font-size: 12px;
+    line-height: 36px;
+  }
+
+  .tamanhos ul li {
+    display: inline-block;
+    margin-left: 0;
+    margin-bottom: 3.488%;
+    margin-right: 3.488%;
+  }
+
+  .vitrine {
+    float: right;
+    position: relative;
+    width: 68.718%;
+  }
+
+  .produto {
+    width: 24.338%;
+    margin-top: 0;
+    margin-right: 3.068%;
+    margin-left: 0;
+    margin-bottom: 4.777%;
+  }
+
+  .botaoCarregar {
+    width: 20.66%;
+    height: 42px;
+    margin: 0 auto 6.498% 29%;
+    cursor: pointer;
+  }
+  .botaoCarregar h4 {
+    font-size: 14px;
+  }
+
+  footer {
+    display: inline-block;
+  }
+}
+
+/*# sourceMappingURL=estiloM3.css.map */
